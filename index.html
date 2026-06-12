@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多乐的成长记录</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 50%, #90caf9 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 60px 20px 40px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #e91e63;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        header p {
+            font-size: 1.2em;
+            color: #666;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px 60px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h2 {
+            color: #e91e63;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .card p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 40px;
+        }
+
+        .timeline::before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, #e91e63, #9c27b0);
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -32px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #e91e63;
+            border-radius: 50%;
+            border: 3px solid white;
+            box-shadow: 0 0 0 3px #e91e63;
+        }
+
+        .timeline-date {
+            font-size: 0.9em;
+            color: #e91e63;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .milestone-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .milestone {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #e1f5fe 0%, #b3e5fc 100%);
+            border-radius: 12px;
+        }
+
+        .milestone .icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .milestone h3 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .milestone p {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>多乐的成长记录</h1>
+        <p>记录每一个珍贵的成长瞬间 ✨</p>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>欢迎来到多乐的小世界</h2>
+            <p>
+                这里记录着多乐成长的点点滴滴——从第一次微笑到第一步蹒跚学步，
+                从咿呀学语到叫出第一声"爸爸妈妈"。每一个瞬间都值得被珍藏，
+                每一天的成长都是生命中最美好的礼物。
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>成长里程碑</h2>
+            <div class="milestone-grid">
+                <div class="milestone">
+                    <div class="icon">👶</div>
+                    <h3>来到世界</h3>
+                    <p>带着全家人的期待降临</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">😊</div>
+                    <h3>第一次微笑</h3>
+                    <p>融化了所有人的心</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">🦶</div>
+                    <h3>第一步走路</h3>
+                    <p>勇敢地迈出探索世界的第一步</p>
+                </div>
+                <div class="milestone">
+                    <div class="icon">💬</div>
+                    <h3>学会说话</h3>
+                    <p>用声音表达对世界的好奇</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>成长足迹</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2026年</div>
+                    <p>多乐每一天都在进步，学会了好多新本领，是全家人的开心果！</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">成长进行中...</div>
+                    <p>更多精彩的故事正在发生，敬请期待～</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" style="text-align: center;">
+            <h2>爱的寄语</h2>
+            <p style="font-size: 1.1em; font-style: italic;">
+                "亲爱的多乐，愿你健康快乐地成长，<br>
+                永远保持对世界的好奇与热爱。<br>
+                爸爸妈妈会一直陪伴你，<br>
+                记录你成长路上的每一个精彩瞬间。"<br>
+                <span style="color: #e91e63;">—— 爱你的爸爸妈妈 ❤️</span>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 多乐的成长记录 | duole.cloud</p>
+    </footer>
+</body>
+</html>
